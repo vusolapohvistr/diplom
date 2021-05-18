@@ -37,8 +37,8 @@ impl GeneticAlgTSPSolver {
   ) {
     population
       .sort_by(|a, b| 
-        calc_fitness(&points, &distances_mat, &a)
-          .partial_cmp(&calc_fitness(&points, &distances_mat, &b))
+        calc_fitness(&points, &distances_mat, &b)
+          .partial_cmp(&calc_fitness(&points, &distances_mat, &a))
           .unwrap()
       );
   }
