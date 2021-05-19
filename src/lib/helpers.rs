@@ -1,7 +1,7 @@
-use super::{distance::Distance, sphere_point::SpherePoint};
+use super::{distance::Distance};
 
 
-pub fn calculate_path_length(points: &Vec<SpherePoint>) -> f64 {
+pub fn calculate_path_length<T: Distance>(points: &Vec<T>) -> f64 {
   let mut result = 0.0;
 
   for i in 0..points.len() - 1 {

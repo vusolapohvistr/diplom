@@ -1,2 +1,2 @@
-pub mod ant_alg;
+pub mod algs;
 pub mod tsp_alg;
